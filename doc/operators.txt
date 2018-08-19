@@ -1,7 +1,7 @@
 Operators
 =========
 
-As a convenience, Luadash provides named functions
+As a convenience, Luascore provides named functions
 for all of Lua's operators.
 
 * _.ops.plus corresponds to +

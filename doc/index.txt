@@ -1,15 +1,15 @@
-       __                  ____                __  
-   ---/ /   __  __ ____ _ / __ \ ____ _ _____ / /_
-  ---/ /   / / / // __ `// / / // __ `// ___// __ \
- ---/ /___/ /_/ // /_/ // /_/ // /_/ /(__  )/ / / /
----/_____/\__,_/ \__,_//_____/ \__,_//____//_/ /_/
+      __                ____
+  ---/ /  __ __ ___ _  / __/ ____ ___   ____ ___
+ ---/ /__/ // // _ `/ _\ \  / __// _ \ / __// -_)
+---/____/\_,_/ \_,_/ /___/  \__/ \___//_/   \__/
+
 
 (Press 'q' at any time to exit the pager.)
 
 Each of the functions mentioned below has their own
 documentation page; You can read it by executing
 
-  luadash [function]
+  luascore [function]
 
 * _.expect(name, idx, type, value)
 

@@ -54,7 +54,7 @@ if fs.exists(doc_path .. topic .. '.txt') then
           if c == 'q' then
             term.clear()
 
-            local str = 'Thank you for using LuaDash!'
+            local str = 'Thank you for using LuaScore!'
             term.setCursorPos((w - #str) / 2, 2)
             print(str)
 

@@ -1,4 +1,4 @@
---- A simplified test runner for luadash
+--- A simplified test runner for luascore
 
 local _ = require "library"
 
@@ -136,7 +136,7 @@ local function fail(message)
   error(setmetatable({ message = message, fail = true }, error_mt))
 end
 
-describe("luadash", function()
+describe("luascore", function()
   it("can be required", function()
     require("library")
   end)
