@@ -51,6 +51,10 @@ documentation page; You can read it by executing
 
     _.apply(f, { 1, 2, 3 }) = f(1,2,3)
 
+* _.clone(t)
+
+  Returns a shallow copy of 't'
+
 * _.map(array, function, ...)
 
   Create a new array by applying 'function' to
@@ -164,3 +168,8 @@ documentation page; You can read it by executing
   deep comparison between a given table and
   source, returning true if the given table
   has equivalent property values, else false.
+
+* _.shuffle(array)
+
+  Creates an array using values from 'array' but
+  the order of the values are shuffled.

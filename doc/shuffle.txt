@@ -1,0 +1,9 @@
+* _.shuffle(array)
+
+  Creates an array using values from 'array' but
+  the order of the values are shuffled.
+
+  Example:
+
+    > _.shuffle({ 1, 2, 3, 4, 5, 6})
+    => { 5, 2, 3, 6, 4, 1 }
