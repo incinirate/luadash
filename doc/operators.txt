@@ -21,6 +21,6 @@ for all of Lua's operators.
 * _.ops['<'] corresponds to <
 * _.ops['<='] corresponds to <=
 
-Additionally, _.ops.divisible_by(x, y) tests to see
+Additionally, _.ops.divisibleBy(x, y) tests to see
 if y is divisible by x.
 

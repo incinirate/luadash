@@ -9,9 +9,10 @@ local std = {
     "21/_.*"  -- Unused variables starting with _
   },
   globals = {
-    "string.starts_with"
+    "string.startsWith"
   },
   read_globals = {
+    howlci = mk_fields { "log", "status", "close", "resize", "getEnv", "getConfig", "setDay", "setTime" },
     fs = mk_fields { "makeDir", "complete", "copy", "isDir", "list", "getSize",
       "delete", "isReadOnly", "getFreeSpace", "find", "getDrive", "exists",
       "move", "combine", "getName", "getDir", "open" },

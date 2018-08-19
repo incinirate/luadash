@@ -28,12 +28,12 @@ documentation page; You can read it by executing
   =>
     3
 
-* _.map_with_key(table, function)
+* _.mapWithKey(table, function)
 
   Modify each key-value pair in 'table' by applying
   'function' to get the new key /and/ value.
 
-* _.reduce_with_index(array, function, zero)
+* _.reduceWithIndex(array, function, zero)
 
   Reduce all of the elements in 'array' to a single
   value by successively applying 'function' to each
@@ -47,7 +47,7 @@ documentation page; You can read it by executing
   element, and the accumulator, starting
   from 'zero'.
 
-  Unlike `reduce_with_index', 'function' is *not*
+  Unlike `reduceWithIndex', 'function' is *not*
   applied to the indices!
 
 * _.apply(function, arguments)
@@ -100,13 +100,13 @@ documentation page; You can read it by executing
   =>
     { 1, 2, 3, 4 }
 
-* _.flat_map(array, f, ...)
+* _.flatMap(array, f, ...)
 
   Create a new array by applying 'function' to
   every i-th element from 'array' and '...', and
   concatenating all of the resulting arrays.
 
-    _.flat_map({ 1, 2, 3 },
+    _.flatMap({ 1, 2, 3 },
       function(x) return {x, x} end)
   =>
     { 1, 1, 2, 2, 3, 3 }
@@ -125,17 +125,17 @@ documentation page; You can read it by executing
   Sort the elements of 'array' and return it.
   Merely an alias for 'table.sort'
 
-* _.sort_by(array, function)
+* _.sortBy(array, function)
 
   Sort 'array' by 'function' where the value
   returned by 'function' determines how the
   array will be sorted.
 
-    _.sort_by({ 1, 2, 3 }, math.sin)
+    _.sortBy({ 1, 2, 3 }, math.sin)
   =>
     { 3, 1, 2 }
 
-* _.sample_size(array, n)
+* _.sampleSize(array, n)
 
   Select 'n' random, distinct items from 'array'
   and collect them into a list. If 'n' is larger
@@ -183,7 +183,7 @@ documentation page; You can read it by executing
   Creates a function that returns the value at
   path of a given table.
 
-* _.matches_property(path, value)
+* _.matchesProperty(path, value)
 
   Creates a function that performs a partial
   deep comparison between the value at path of

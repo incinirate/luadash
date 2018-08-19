@@ -1,0 +1,14 @@
+* string:startsWith(string)
+
+  Returns true if a string has the given prefix.
+
+  Example:
+
+    local foo = "hello world"
+    print(foo:startsWith("hello"))
+    print(foo:startsWith("bar"))
+    print(foo:startsWith(""))
+    
+    true
+    false
+    true

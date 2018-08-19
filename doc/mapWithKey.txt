@@ -1,4 +1,4 @@
-* _.map_with_key(table, iteratee)
+* _.mapWithKey(table, iteratee)
 
   Modify each key-value pair in 'table' by applying
   'iteratee' to get the new key /and/ value.
@@ -6,7 +6,7 @@
 
   Example:
 
-    > _.map_with_key( { [1] = "1", [2] = "2" },
+    > _.mapWithKey( { [1] = "1", [2] = "2" },
       function(k, v)
         return tostring(k), tonumber(v)
       end)

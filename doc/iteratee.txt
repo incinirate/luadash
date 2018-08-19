@@ -9,7 +9,7 @@
 =>
   6
 
-* _.matches_property(path, value)
+* _.matchesProperty(path, value)
 
   Creates a function that performs a partial
   deep comparison between the value at path of
@@ -18,7 +18,7 @@
 
   Example:
 
-    _.matches_property({ "a", "b" }, 2)
+    _.matchesProperty({ "a", "b" }, 2)
       ({ a={ b=2 } })
   =>
     true

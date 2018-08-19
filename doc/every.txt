@@ -5,7 +5,7 @@
 
   Examples:
 
-    > _.every({ 1, 2, 3 }, _.partial(_.ops.divisible_by, 2))
+    > _.every({ 1, 2, 3 }, _.partial(_.ops.divisibleBy, 2))
     false
-    > _.every({ 3, 6, 9 }, _.partial(_.ops.divisible_by, 3))
+    > _.every({ 3, 6, 9 }, _.partial(_.ops.divisibleBy, 3))
     true

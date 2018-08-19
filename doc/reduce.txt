@@ -5,7 +5,7 @@
   element, and the accumulator, starting
   from 'zero'.
 
-  Unlike `reduce_with_index', 'function' is *not*
+  Unlike `reduceWithIndex', 'function' is *not*
   applied to the indices!
 
   Example:

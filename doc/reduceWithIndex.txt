@@ -1,4 +1,4 @@
-* _.reduce_with_index(array, iteratee, zero)
+* _.reduceWithIndex(array, iteratee, zero)
 
   Reduce all of the elements in 'array' to a single
   value by successively applying 'iteratee' to each
@@ -7,7 +7,7 @@
 
   Example:
 
-    > _.reduce_with_index({ 1, 2, 3 },
+    > _.reduceWithIndex({ 1, 2, 3 },
       function(acc, i, v)
         return acc + i * v
       end, 0)
