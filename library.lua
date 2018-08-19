@@ -161,13 +161,28 @@ function _.partial(f, ...)
   local args = table.pack(...)
   return function(...)
     local args2, actual = table.pack(...), { }
-    for i = 1, args.n do
-      actual[i] = args[i]
+
+    local i, j, k = 1, 1, 1
+    while args.n >= i or args2.n >= j do
+      if args.n >= i then
+        local val = args[i]
+        i = i + 1
+
+        if val == _ then
+          actual[k] = args2[j]
+          j = j + 1
+        else
+          actual[k] = val
+        end
+      else
+        actual[k] = args2[j]
+        j = j + 1
+      end
+
+      k = k + 1
     end
-    for i = 1, args2.n do
-      actual[args.n + i] = args2[i]
-    end
-    return f(table.unpack(actual, 1, args.n + args2.n))
+
+    return f(table.unpack(actual, 1, k))
   end
 end
 

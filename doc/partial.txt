@@ -2,9 +2,18 @@
 
   Return a function corresponding to the partial
   application of 'f' to the given arguments.
-  For instance:
+
+  Additionally, '_' may be used as a placeholder
+  for partially applied arguments.
 
   Example:
 
     > _.partial(_.ops.plus, 1)(2)
     => 3
+
+    > local function greet(greeting, name)
+        return (greeting .. " " .. name)
+      end
+      local greetFred = _.partial(greet, _, "Fred")
+      return greetFred("Hi")
+    => "Hi Fred"
