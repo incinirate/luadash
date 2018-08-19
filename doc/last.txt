@@ -2,6 +2,8 @@
 
   Return the last element of 'x'.
 
-  > _.last { 1, 2, 3 }
-  => 3
+  Example:
+
+    > _.last { 1, 2, 3 }
+    => 3
 

@@ -6,7 +6,7 @@
   Additionally, '_' may be used as a placeholder
   for partially applied arguments.
 
-  Example:
+  Examples:
 
     > _.partial(_.ops.plus, 1)(2)
     => 3

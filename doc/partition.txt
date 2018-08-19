@@ -1,0 +1,20 @@
+* _.partition(array, predicate)
+
+  Splits the elements of 'array' into two groups,
+  the first of which holds those which 'predicate'
+  returns truthy for, and the second holds all
+  other elements.
+
+  Examples:
+
+    > users = {
+        {name = "fred", age = 16, active = false},
+        {name = "tom",  age = 32, active = true},
+        {name = "tim",  age = 2,  active = false}
+      }
+    > _.map(_.partition(users, 
+        function(o) return o.active end)[2], "age")
+    => { 16, 2 }
+    > _.map(_.partition(users, 
+        {"active", false})[2], "name")
+    => { "tom" }

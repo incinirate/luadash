@@ -2,7 +2,7 @@
 
   Returns true if a string has the given prefix.
 
-  Example:
+  Examples:
 
     > ("hello world"):startsWith("hello")
     => true

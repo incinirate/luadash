@@ -2,7 +2,7 @@
 
   Returns a shallow copy of 't'
 
-  Example:
+  Examples:
 
     > _.clone({ 1, 2, 3, 4, 5 })
     => { 1, 2, 3, 4, 5 }

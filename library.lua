@@ -454,6 +454,69 @@ function _.values(t)
   return out
 end
 
+function _.range(begin, stop, step)
+  _.expect("range", 1, "number", begin)
+  _.expect("range", 1, "number|nil", stop)
+  _.expect("range", 1, "number|nil", step)
+
+  if not step then
+    if begin < 0 and not stop then
+      stop, begin = begin, 0
+      step = -1
+    else
+      step = 1
+    end
+  end
+
+  if not stop then
+    stop, begin = begin, 1
+  end
+
+  local t, n = {}, 0
+  for i = begin, stop, step do
+    n = n + 1
+    t[n] = i
+  end
+
+  return t
+end
+
+function _.chunk(t, n)
+  _.expect("chunk", 1, "table", t)
+  _.expect("chunk", 2, "number", n)
+
+  local nt = {}
+  for i = 1, #t do
+    local index = math.floor((i - 1) / n) + 1
+    local subIndex = (i - 1) % n + 1
+    nt[index] = nt[index] or {}
+    nt[index][subIndex] = t[i]
+  end
+
+  return nt
+end
+
+function _.partition(t, p)
+  _.expect("partition", 1, "table", t)
+  _.expect("partition", 2, "predicate", p)
+  p = indexIteratee(p)
+
+  local passed = {n = 0}
+  local failed = {n = 0}
+
+  for i = 1, #t do
+    if p(t[i]) then
+      passed.n = passed.n + 1
+      passed[passed.n] = t[i]
+    else
+      failed.n = failed.n + 1
+      failed[failed.n] = t[i]
+    end
+  end
+
+  return {passed, failed, n = 2}
+end
+
 function _mt.__call(_, x)
   local function wrap(f)
     return function(...)

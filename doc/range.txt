@@ -1,0 +1,17 @@
+* _.range([begin], stop, [step=1])
+
+  Creates an array of numbers progressing from
+  'begin' to 'stop' inclusively. A step of '-1'
+  will be used if a negative 'stop' is specified
+  without a 'begin' or 'step'.
+
+  Examples:
+    > _.range(6)
+    => { 1, 2, 3, 4, 5, 6 }
+    > _.range(-2, 2)
+    => { -2, -1, 0, 1, 2 }
+    > _.range(0, 8, 4)
+    => { 0, 4, 8 }
+    > _.range(-3)
+    => { 0, -1, -2, -3 }
+

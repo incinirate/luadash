@@ -51,6 +51,13 @@ documentation page; You can read it by executing
 
     _.apply(f, { 1, 2, 3 }) = f(1,2,3)
 
+* _.range([begin], stop, [step=1])
+
+  Creates an array of numbers progressing from
+  'begin' to 'stop' inclusively. A step of '-1'
+  will be used if a negative 'stop' is specified
+  without a 'begin' or 'step'.
+
 * _.clone(t)
 
   Returns a shallow copy of 't'

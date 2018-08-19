@@ -1,0 +1,13 @@
+* _.chunk(array, size)
+
+  Split 'array' into multiple arrays each with
+  a length of 'size'. If 'array' doesn't split
+  evenly, the final chunk will be the remaining
+  elements.
+
+  Examples:
+
+    > _.chunk({1, 2, 3, 4}, 2)
+    => { { 1, 2 }, { 3, 4 } }
+    > _.chunk({1, 2, 3, 4}, 3)
+    => { { 1, 2, 3 }, { 4 } }

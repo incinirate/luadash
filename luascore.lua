@@ -40,8 +40,9 @@ if fs.exists(doc_path .. topic .. ".txt") then
   local s = f.readAll()
   local lns = select(2, s:gsub("\n", "\n"))
   local w, h = term.getSize()
+  local cterm = term.current()
 
-  if lns > h - 5 then
+  if lns > h then
     term.clear()
     term.setCursorPos(1,1)
     parallel.waitForAny(
@@ -52,6 +53,7 @@ if fs.exists(doc_path .. topic .. ".txt") then
         while true do
           local _, c = os.pullEvent("char")
           if c == "q" then
+            term.redirect(cterm)
             term.clear()
 
             local str = "Thank you for using LuaScore!"

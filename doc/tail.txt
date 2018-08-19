@@ -2,6 +2,8 @@
 
   Return 'x', with the first element removed.
 
-  > _.tail { 1, 2, 3 }
-  => { 2, 3 }
+  Example:
+
+    > _.tail { 1, 2, 3 }
+    => { 2, 3 }
 
