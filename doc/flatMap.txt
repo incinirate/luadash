@@ -8,5 +8,5 @@
   Example:
     > _.flatMap({ 1, 2, 3 },
         function(x) return {x, x} end)
-    { 1, 1, 2, 2, 3, 3 }
+    => { 1, 1, 2, 2, 3, 3 }
 

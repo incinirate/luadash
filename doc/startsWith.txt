@@ -4,11 +4,9 @@
 
   Example:
 
-    local foo = "hello world"
-    print(foo:startsWith("hello"))
-    print(foo:startsWith("bar"))
-    print(foo:startsWith(""))
-    
-    true
-    false
-    true
+    > ("hello world"):startsWith("hello")
+    => true
+    > ("foo bar"):startsWith("bar")
+    => false
+    > ("test"):startsWith("")
+    => true

@@ -11,4 +11,4 @@
   Example:
 
     > _.reduce({ 1, 2, 3 }, _.ops.plus, 0)
-    6
+    => 6

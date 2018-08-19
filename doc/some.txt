@@ -6,5 +6,5 @@
   Example:
 
     > _.some( {1, 2, 3}, _.partial(_.ops['<'], 1) )
-    true
+    => true
 

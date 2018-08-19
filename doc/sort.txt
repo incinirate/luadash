@@ -11,6 +11,5 @@
 
   Example:
 
-    _.sortBy({ 1, 2, 3 }, math.sin)
-  =>
-    { 3, 1, 2 }
+    > _.sortBy({ 1, 2, 3 }, math.sin)
+    => { 3, 1, 2 }

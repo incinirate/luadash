@@ -7,4 +7,4 @@
   Example:
 
     > _.partial(_.ops.plus, 1)(2)
-    3
+    => 3

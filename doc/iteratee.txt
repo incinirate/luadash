@@ -5,9 +5,8 @@
 
   Example:
 
-  _.property("a")({a=6})
-=>
-  6
+    > _.property("a")({a=6})
+    => 6
 
 * _.matchesProperty(path, value)
 
@@ -18,10 +17,9 @@
 
   Example:
 
-    _.matchesProperty({ "a", "b" }, 2)
-      ({ a={ b=2 } })
-  =>
-    true
+    > _.matchesProperty({ "a", "b" }, 2)(
+        { a={ b=2 } })
+    => true
 
 * _.matches(source)
 
@@ -32,7 +30,6 @@
 
   Example:
 
-    _.matches({ a={ c=7 } })
-      ({ a={ c=7, d=9 }, b=3 })
-  =>
-    true
+    > _.matches({ a={ c=7 } })(
+        { a={ c=7, d=9 }, b=3 })
+    => true

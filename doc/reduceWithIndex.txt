@@ -11,4 +11,4 @@
       function(acc, i, v)
         return acc + i * v
       end, 0)
-    14
+    => 14

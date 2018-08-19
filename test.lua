@@ -204,12 +204,15 @@ describe("luascore", function()
               end
 
               -- Consume the example output
-              while line do
-                if line:sub(1, #indent) == indent and line:sub(#indent + 1, #indent + 1) ~= ">" then
-                  result[#result + 1] = line:sub(#indent)
-                  line = handle.readLine()
-                else
-                  break
+              if line:sub(1, #indent) == indent and line:sub(#indent + 1, #indent + 2) == "=>" then
+                line = (" "):rep(#indent) ..  line:match("=> (.+)")
+                while line do
+                  if line:sub(1, #indent) == indent and line:sub(#indent + 1, #indent + 1) ~= ">" then
+                    result[#result + 1] = line:sub(#indent)
+                    line = handle.readLine()
+                  else
+                    break
+                  end
                 end
               end
 

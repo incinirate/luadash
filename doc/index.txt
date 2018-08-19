@@ -22,11 +22,6 @@ documentation page; You can read it by executing
 
   Return a function corresponding to the partial
   application of 'f' to the given arguments.
-  For instance:
-
-    print(_.partial(_.ops.plus, 1)(2))
-  =>
-    3
 
 * _.mapWithKey(table, function)
 
@@ -61,20 +56,10 @@ documentation page; You can read it by executing
   Create a new array by applying 'function' to
   every i-th element from 'array' and '...'.
 
-  For instance:
-    _.map({ 1, 2, 3 }, _.ops.plus, { 3, 2, 1 })
-  =>
-    { 4, 4, 4 }
-
 * _.zip(...)
 
   Create a new array by grouping together every
   i-th element of '...'.
-
-  For instance:
-    _.zip({ 1, 2, 3 }, { 'a', 'b', c' })
-  =>
-    { { 1, 'a' }, { 2, 'b' }, { 3, 'c' } }
 
 * _.push(t, ...) !
 
@@ -86,30 +71,17 @@ documentation page; You can read it by executing
   Return a new array created by inserting 'element'
   after each element of 'array'.
 
-    _.intersperse({ 1, 2, 3 }, 'a')
-  =>
-    { 1, 'a', 2, 'a', 3, 'a' }
-
 * _.flatten(val)
 
   Turn 'val', an array-of-arrays to a single array,
   by unpacking each of its elements. Elements which
   are not arrays are left alone.
 
-    _.flatten({ {1, 2}, 3, 4 })
-  =>
-    { 1, 2, 3, 4 }
-
 * _.flatMap(array, f, ...)
 
   Create a new array by applying 'function' to
   every i-th element from 'array' and '...', and
   concatenating all of the resulting arrays.
-
-    _.flatMap({ 1, 2, 3 },
-      function(x) return {x, x} end)
-  =>
-    { 1, 1, 2, 2, 3, 3 }
 
 * _.filter(array, predicate)
 
@@ -130,10 +102,6 @@ documentation page; You can read it by executing
   Sort 'array' by 'function' where the value
   returned by 'function' determines how the
   array will be sorted.
-
-    _.sortBy({ 1, 2, 3 }, math.sin)
-  =>
-    { 3, 1, 2 }
 
 * _.sampleSize(array, n)
 
