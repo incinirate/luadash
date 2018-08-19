@@ -58,6 +58,20 @@ documentation page; You can read it by executing
   will be used if a negative 'stop' is specified
   without a 'begin' or 'step'.
 
+* _.chunk(array, size)
+
+  Split 'array' into multiple arrays each with
+  a length of 'size'. If 'array' doesn't split
+  evenly, the final chunk will be the remaining
+  elements.
+
+* _.partition(array, predicate)
+
+  Splits the elements of 'array' into two groups,
+  the first of which holds those which 'predicate'
+  returns truthy for, and the second holds all
+  other elements.
+
 * _.clone(t)
 
   Returns a shallow copy of 't'
