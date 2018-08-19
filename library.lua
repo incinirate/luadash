@@ -451,7 +451,7 @@ _.ops = {
   conj = function(a, b) return a and b end,
   disj = function(a, b) return a or b end,
   equals = function(a, b) return a == b end,
-  divisiblBy = function(a, b)
+  divisibleBy = function(a, b)
     return b % a == 0
   end,
   [">"] = function(a, b) return a > b end,
