@@ -324,7 +324,7 @@ function _.clone(t)
 end
 
 function _.shuffle(t)
-  _.expect("sortBy", 1, "table", t)
+  _.expect("shuffle", 1, "table", t)
   local nt = _.clone(t)
 
   for i = #nt, 1, -1 do
