@@ -318,11 +318,28 @@ function _.id(v)
   return v
 end
 
+function _.clone(t)
+  _.expect("sortBy", 1, "table", t)
+  return _.map(t, _.id)
+end
+
+function _.shuffle(t)
+  _.expect("sortBy", 1, "table", t)
+  local nt = _.clone(t)
+
+  for i = #nt, 1, -1 do
+    local j = math.random(1, i)
+    nt[i], nt[j] = nt[j], nt[i]
+  end
+
+  return nt
+end
+
 function _.sortBy(t, f)
   _.expect("sortBy", 1, "table", t)
   _.expect("sortBy", 2, "iteratee", f)
   f = indexIteratee(f)
-  local nt = _.map(t, _.id)
+  local nt = _.clone(t)
 
   table.sort(nt, function(a, b) return f(a) < f(b) end)
   return nt
